@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EUSPACE Admin Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-logo">EU</div>
+        <div class="header-text">
+            <h1>EUSPACE Admin Portal</h1>
+            <p>Enverga University Candelaria — Student Management</p>
+        </div>
+    </header>
+
+    <div id="container">
+
+        <div id="form">
+            <label>Student ID</label>
+            <input type="text" id="student_id_input" placeholder="e.g. A23-0211">
+
+            <label>Name</label>
+            <input type="text" id="name" placeholder="e.g. Juan Dela Cruz">
+
+            <label>Department</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Education">Education</option>
+                <option value="Nursing">Nursing</option>
+                <option value="Arts and Sciences">Arts and Sciences</option>
+            </select>
+
+            <label>Year Level</label>
+            <select id="year_level">
+                <option value="">Select Year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+
+            <label>Email</label>
+            <input type="text" id="email" placeholder="e.g. juan@student.eu.edu.ph">
+
+            <label>Status</label>
+            <select id="status">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <button id="add">Add Student</button>
+            <button id="update">Update</button>
+            <input type="hidden" id="student_id_hidden">
+        </div>
+        <div id="table-wrapper">
+            <table id="content">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Year Level</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

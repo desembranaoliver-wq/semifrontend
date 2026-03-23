@@ -140,6 +140,6 @@ update.addEventListener('click', () => {
     })
     .catch((error) => {
         console.log(error);
-        alert("Failed to update student.);
+        alert("Failed to update student.");
     });
 });

@@ -26,7 +26,7 @@ submit.addEventListener('click', () => {
     })
     .catch((error) => {
         console.log(error);
-        alert("Failed to add student. Check the console for details.");
+        alert("Failed to add student.");
     });
 });
 
@@ -72,7 +72,7 @@ function getStudents() {
     })
     .catch(error => {
         console.log(error);
-        content.innerHTML = `<tr class="state-row"><td colspan="7">Could not load students. Is the server running?</td></tr>`;
+        content.innerHTML = `<tr class="state-row"><td colspan="7">Could not load students.</td></tr>`;
     });
 }
 
@@ -92,7 +92,7 @@ function deleteMember(id) {
         })
         .catch(error => {
             console.log(error);
-            alert("Failed to delete student. Check the console for details.");
+            alert("Failed to delete student.");
         });
     }
 }
@@ -140,6 +140,6 @@ update.addEventListener('click', () => {
     })
     .catch((error) => {
         console.log(error);
-        alert("Failed to update student. Check the console for details.");
+        alert("Failed to update student.);
     });
 });
